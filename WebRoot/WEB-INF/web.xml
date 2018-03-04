@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   
+   <!-- Login -->
+   <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.LoginServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+  	<servlet-name>BookInfoServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.BookInfoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>BookInfoServlet</servlet-name>
+  	<url-pattern>/BookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ManageBookInfoServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.ManageBookInfoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>ManageBookInfoServlet</servlet-name>
+  	<url-pattern>/ManageBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BorrowedInfoServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.BorrowedInfoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>BorrowedInfoServlet</servlet-name>
+  	<url-pattern>/BorrowedInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ReservationInfoServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.ReservationInfoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>ReservationInfoServlet</servlet-name>
+  	<url-pattern>/ReservationInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>BookReviewServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.BookReviewServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>BookReviewServlet</servlet-name>
+  	<url-pattern>/BookReviewServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PingServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.PingServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>PingServlet</servlet-name>
+  	<url-pattern>/PingServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdviseInfoServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.AdviseInfoServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>AdviseInfoServlet</servlet-name>
+  	<url-pattern>/AdviseInfoServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>UploaderServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.UploaderServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>UploaderServlet</servlet-name>
+  	<url-pattern>/UploaderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateDatabaseServlet</servlet-name>
+  	<servlet-class>nedu.edu.library.service.UpdateDatabaseServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+  	<servlet-name>UpdateDatabaseServlet</servlet-name>
+  	<url-pattern>/UpdateDatabaseServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

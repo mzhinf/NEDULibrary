@@ -1,0 +1,23 @@
+1.
+<jsp:include page=""></jsp:include> 实现页面的复用
+
+2.
+<base target="rightFrame"/>
++
+<iframe name=rightFrame style="WIDTH: 100%; HEIGHT: 100%"
+src="" frameborder=0>
+</iframe> 实现在一个页面的一部分变化
+
+3.
+借阅与预约逻辑
+
+客户端发送预约请求
+客户端检查图书信息 检查是否可以预约
+可以预约->服务端接收请求
+查询预约图书数量
+添加预约信息到数据库
+修改图书信息中预约数量
+返回预约信息
+
+预约信息之保留一天
+
